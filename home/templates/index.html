@@ -1,0 +1,540 @@
+{% extends 'base.html' %}
+{% block title %}Jayesh Singh Portfolio{% endblock %}
+
+{% block content %}
+{% block extrahead %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/swipebox.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_old.css' %}">
+{% endblock %}
+
+<body>
+    <!--::header part start::-->
+    
+    <!-- banner post start-->
+    <div class="banner">
+        <div class="container">
+            <div class="col-md-3 b-part1">
+                <img src="{% static 'images/1.jpg' %}" alt=" " />
+                <h1>Jayesh Singh</h1>
+                <h2>Software Developer</h2>
+            </div>
+            <div class="col-md-3 b-part2">
+                <h3>Contact</h3>
+                <h4><a href="mailto:info@example.com">jayeshsingh9767@gmail.com</a></h4>
+                <h4 class="agile">+91 9767407450</h4>
+                <h4>Mumbai, India</h4>
+            </div>
+            <div class="col-md-3 b-part3">
+                <h3>Follow</h3>
+                <a href="https://www.facebook.com/people/Jayesh-Singh/100008788217225" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/jayeshsingh9767" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/jayeshsingh9767/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://github.com/jayeshsingh9767" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/singhjayesh8229" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    
+            </div>
+            <div class="col-md-3 b-part4">
+                <h3>Visit</h3>
+                <a href="https://github.com/jayeshsingh9767" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <h4>Follow my Github <br> portfolio</h4>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--//banner-->
+    
+    <!--about-->
+    <div class="about">
+        <div class="container">
+            <h3>About Me</h3>
+            <label class="line"></label>
+            <img src="{% static 'images/1.jpg' %}" alt=" " />
+            <p>Hii there, I am full time Programmer. I mostly write code just for fun, solving some real life problems. Professional I am Software Developer and always loves to learn some new Tech. I have an good Experience on Software and Web Development Projects. Nowadays, I am quite Interested in  IoT and working on the same currently.</p>
+        </div>
+    </div>
+    <!--//about-->
+    
+    
+    <!--skills-->
+    <div class="skills">
+        <div class="container">
+            <h3>My Skills</h3>
+            <label class="line"></label>
+                <div class="col-md-6 skills-left">
+                    <h4>Career Overview</h4>
+                    <p>I had workerd on many Technologies including Web Development, App Development and IoT and IIoT. Nowadays, I am working with an startup IT firm named Terado Engineering.</p>
+                    <p>I had worked with basic Technologies like Git and Web Development to IoT and Machine Learning, here are Listed my Top Skills with their Experience Score. </p>
+                </div>
+                <div class="col-md-6 skills-right">
+                    <div class="bar_group">
+                        <div class='bar_group__bar thin' label='Python' show_values='true' tooltip='true' value='100'></div>
+                        <div class='bar_group__bar thin' label='Internet Of Things(IoT)' show_values='true' tooltip='true' value='75'></div>
+                        <div class='bar_group__bar thin' label='MongoDB' show_values='true' tooltip='true' value='80'></div>
+                        <div class='bar_group__bar thin' label='Web Development' show_values='true' tooltip='true' value='95'></div>
+                    </div>
+                    <script src="{% static 'js/bars.js' %}"></script>
+                </div>
+                <div class="clearfix"></div>
+    
+        </div>
+    </div>
+    <!--/skills-->
+    
+    <!-- download-->
+    <div class="download">
+        <h3>Checkout My Professional Resume</h3>
+        <a href="jayesh_resume.pdf" target="_blank">Open</a>
+    </div>
+    <!-- //download -->
+    
+    <!-- projects -->
+    <div class="projects">
+        <div class="container">
+            <div class="project-grids">
+                <div class="cycle">
+                    <span> </span>
+                </div>
+                <div class="project-grid total-project">
+                    <p>10+</p>
+                    <p>Projects</p>
+                    <span> <i class="p-icon"> </i></span>
+                </div>
+                <div class="project-grid clientsgrid">
+                    <div>
+                        <p>2</p>
+                        <p>Companies</p>
+                    </div>
+                    <span> <i class="p-icon"> </i></span>
+                </div>
+                <div class="project-grid people-grid">
+                    <div>
+                        <p>100%</p>
+                        <p>Satisfaction</p>
+                    </div>
+                    <span> <i class="p-icon"> </i></span>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //projects -->
+    
+    
+    <!--portfolio-->
+    <div id="portfolio" class="portfolio">
+            <div class="container">
+                <h3>My Portfolio</h3>
+                <label class="line"></label>
+                <div class="sap_tabs">
+                    <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                        <ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+                            <li class="resp-tab-item"><span>All</span></li>
+                            <li class="resp-tab-item"><span>Professional</span></li>
+                            <li class="resp-tab-item"><span>Personal</span></li>
+                            <li class="resp-tab-item"><span>Community</span></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                        <div class="resp-tabs-container">
+                            <div class="tab-1 resp-tab-content">
+                                <div class="tab_img">
+                                    <div class="col-md-4 portfolio-grids grid first">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".5s">
+                                            <a href="{% static 'images/ED.jpg' %}" class="swipebox" title="Ecolyser is an Online Polutant Monitoaring Plantform for Water and Air Quality. ">
+                                                <img src="{% static 'images/ED.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser Backend</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="{% static 'images/ECO.jpg' %}" class="swipebox" title="Ecolyser Data Logger is an IoT Device, which is used for capturing Capturing Environmental Data from Analyzers and Sending it to Ecolyser Server and other servers like MPCB and CPCB">
+                                                <img src="{% static 'images/ECO.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser Data Logger</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="{% static 'images/eco_hmi.jpg' %}" class="swipebox" title="It’s a kivy based app that run’s on raspberry Pi screen to render pollutant data on site and configure Ecolyser in Offline mode.">
+                                                <img src="{% static 'images/eco_hmi.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser HMI</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="{% static 'images/eco_app.jpg' %}" class="swipebox" title="It is a Kotlin based app built for monitoring pollutant data from Ecolyser devices. <a href='https://play.google.com/store/apps/details?id=com.ecolyser.app'>Click</a> here to download apk.">
+                                                <img src="{% static 'images/eco_app.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser Android App</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".9s">
+                                            <a href="{% static 'images/ddt.jpg' %}" class="swipebox" title="DDT protocol Enables Direct Communication between IoT Devices(Ecolyser, Smart Controller, etc) all over the world. This Ensuares Integrity of configuration and remote access of Devices.">
+                                                <img src="{% static 'images/ddt.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>DDT Protocol</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid grid-mdl">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".5s">
+                                            <a href="{% static 'images/picmesh.jpg' %}" class="swipebox" title="PicMesh is a Web Application that allows user to Surf through thousands of
+    Photographs clicked by hundreds of different local Photographers. User can choose desired photo and can buy the Copyright for particular
+    photo.">
+                                                <img src="{% static 'images/picmesh.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Picmesh</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid grid-mdl">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="{% static 'images/g5.jpg' %}" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="{% static 'images/g5.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>TOOB</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-4 portfolio-grids grid grid-mdl">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".9s">
+                                            <a href="images/g6.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g6.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Musaccusa dignis</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".5s">
+                                            <a href="images/g7.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g7.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Qignissimos ducimus</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="images/g8.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g8.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Dignissimos vero</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid last">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".9s">
+                                            <a href="images/g9.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g9.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Accusamus digni</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="tab-1 resp-tab-content">
+                                <div class="tab_img">
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="{% static 'images/ED.jpg' %}" class="swipebox" title="Ecolyser is an Online Polutant Monitoaring Plantform for Water and Air Quality.">
+                                                <img src="{% static 'images/ED.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser Backend</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="{% static 'images/ECO.jpg' %}" class="swipebox" title="Ecolyser Data Logger is an IoT Device, which is used for capturing Capturing Environmental Data from Analyzers and Sending it to Ecolyser Server and other servers like MPCB and CPCB">
+                                                <img src="{% static 'images/ECO.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser Data Logger</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="{% static 'images/eco_hmi.jpg' %}" class="swipebox" title="It’s a kivy based app that run’s on raspberry Pi screen to render pollutant data on site and configure Ecolyser in Offline mode.">
+                                                <img src="{% static 'images/eco_hmi.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser HMI</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1 wow fadeInUp animated" data-wow-delay=".7s">
+                                            <a href="{% static 'images/eco_app.jpg' %}" class="swipebox" title="It is a Kotlin based app built for monitoring pollutant data from Ecolyser devices. <a href='https://play.google.com/store/apps/details?id=com.ecolyser.app'>Click</a> here to download apk.">
+                                                <img src="{% static 'images/eco_app.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Ecolyser Android App</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="{% static 'images/ddt.jpg' %}" class="swipebox" title="DDT protocol Enables Direct Communication between IoT Devices(Ecolyser, Smart Controller, etc) all over the world. This Ensuares Integrity of configuration and remote access of Devices.">
+                                                <img src="{% static 'images/ddt.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>DDT Protocol</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="tab-1 resp-tab-content">
+                                <div class="tab_img">
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="{% static 'images/picmesh.jpg' %}" class="swipebox" title="PicMesh is a Web Application that allows user to Surf through thousands of
+    Photographs clicked by hundreds of different local Photographers. User can choose desired photo and can buy the Copyright for particular
+    photo.">
+                                                <img src="{% static 'images/picmesh.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Picmesh</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="{% static 'images/g5.jpg' %}" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="{% static 'images/g5.jpg' %}" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>TOOB</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="images/g9.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g9.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Accusamus ducimus</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <!-- <div class="tab-1 resp-tab-content">
+                                <div class="tab_img">
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="images/g9.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g9.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Qignissimos vero</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="images/g1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g1.png" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Dignissimos ducimus</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 portfolio-grids grid">
+                                        <div class="effect1">
+                                            <a href="images/g5.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                                                <img src="images/g5.jpg" alt="" class="img-responsive" />
+                                                <div class="figcaption">
+                                                    <p>Dignissimos  vero</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ResponsiveTabs-->
+                <script src="{% static 'js/easyResponsiveTabs.js' %}" type="text/javascript"></script>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('#horizontalTab').easyResponsiveTabs({
+                            type: 'default', //Types: default, vertical, accordion
+                            width: 'auto', //auto or any width like 600px
+                            fit: true   // 100% fit in a container
+                        });
+                    });
+                </script>
+                <!--//ResponsiveTabs-->
+                <!-- swipe box js -->
+                <script src="{% static 'js/jquery.swipebox.min.js' %}"></script>
+                    <script type="text/javascript">
+                        jQuery(function($) {
+                            $(".swipebox").swipebox();
+                        });
+                </script>
+                <!-- //swipe box js -->
+            </div>
+        </div>
+    <!--//portfolio-->
+    
+    
+    <!-- blog -->
+        <!-- <div class="blog">
+            <div class="container">
+                <h3>Seminars</h3>
+                <label class="line"></label>
+                <div class="blog-grids">
+                    <div class="col-md-6 blog-left">
+                        <div class="col-md-3 agile1">
+                            <h5>25</h5>
+                            <h6>March-2016</h6>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="#"><h6 class="spcl">Comments-7</h6></a>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <a href="#"><h6 class="spcl">Views-28</h6></a>
+                        </div>
+                        <div class="col-md-9 agile2">
+                            <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/b1.jpg" alt="" /></a>
+                            <a href="#" data-toggle="modal" data-target="#myModal"><h4>Contrary to popular belief</h4></a>
+                            <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-6 blog-right">
+                        <div class="col-md-3 agile1">
+                            <h5>10</h5>
+                            <h6>Feb-2016</h6>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="#"><h6 class="spcl">Comments-8</h6></a>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <a href="#"><h6 class="spcl">Views-48</h6></A>
+                        </div>
+                        <div class="col-md-9 agile2">
+                            <a href="#" data-toggle="modal" data-target="#myModal2"><img src="images/b2.jpg" alt="" /></a>
+                            <a href="#" data-toggle="modal" data-target="#myModal2"><h4>The standard chunk</h4></a>
+                            <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div  class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    
+     <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Contrary to popular belief</h4>
+                </div>
+                <div class="modal-body">
+                        <img src="images/b1.jpg "alt=" " />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.</p>
+                </div>
+                <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 </div>
+    
+            </div>
+        </div>
+    </div> -->
+    
+     <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">The standard chunk</h4>
+                </div>
+                <div class="modal-body">
+                        <img src="{% static 'images/b2.jpg' %} "alt=" " />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.</p>
+                </div>
+                <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 </div>
+    
+            </div>
+        </div>
+    </div>
+    <!--contact-->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h3>Contact</h3>
+            <label class="line"></label>
+            <div class="col-md-4 c-w3l">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <h4>304, Sai Sawli Apt</h4>
+                <h4>Manvelpada, Virar(E)</h4>
+                <h4>Mumbai, India</h4>
+            </div>
+            <div class="col-md-4 c-w3l c-mail">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h4><a href="mailto:info@example.com">jayeshsingh9767@gmail.com</a></h4>
+                <h4><a href="mailto:info@example.com">jayeshsingh@teradoengineering.com</a></h4>
+            </div>
+            <div class="col-md-4 c-w3l c-phn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h4>+919767407450</h4>
+                <h4>+918830506337</h4>
+            </div>
+            <div class="clearfix"></div>
+            <form action="https://mail.google.com/mail/?view=cm&fs=1&to=jayeshsingh9767@gmail.com&su=Got Your Details from Your Website&body=Hello Jayesh&bcc=jayeshsingh@teradoengineering.com" method="post">
+                <input type="text" name="name" class="name" placeholder="Your Name" required="">
+                <input type="email" name="email" class="email" placeholder="Your Email" required="">
+                <textarea  name="your message" placeholder="Your Message"  required=""></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+    <!--//contact-->
+    
+    
+    <!--footer-->
+    <!-- <div class="footer-agileinfo">
+        <p> &copy; 2016 Curriculum vitae. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+    </div> -->
+    <!--//footer-->
+    <!--common js-->
+    
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!--//common js-->
+    <!-- footer part end-->
+    <!-- jquery -->
+    
+
+
+{% endblock %}
