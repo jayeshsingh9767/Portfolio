@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home'
+    'home',
+    'blog',
+    'category',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +76,19 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': 'Portfolio/db.cnf',
+        },
     }
 }
 
@@ -130,3 +141,14 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+USE_TZ = False
+
+TIME_ZONE = 'Asia/Kolkata'
+
+# MARKDOWNIFY_STRIP = True
+# MARKDOWNIFY_WHITELIST_TAGS = {
+#  'a', 'p', 
+#  'h1', 'h2', 'h3','h4', 'h5', 'h6', 'h7',
+#  'ul', 'li', 'span',
+# }
