@@ -3635,13 +3635,13 @@ ul {
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_footer.scss */
 .footer-area {
   background-color: #f7f7f7;
-  padding: 130px 0 25px;
+  padding: 10px 0 25px;
 }
 
 @media (max-width: 991px) {
   /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_footer.scss */
   .footer-area {
-    padding: 70px 0px 25px;
+    padding: 10px 0px 25px;
   }
 }
 
@@ -3790,8 +3790,7 @@ ul {
 
 /* line 132, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_footer.scss */
 .footer-area .copyright_text {
-  padding-top: 25px;
-  margin-top: 70px;
+  margin-top: 10px;
   border-top: 1px solid #e6e8e9;
 }
 
@@ -5212,7 +5211,7 @@ h6 {
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_footer.scss */
 .footer-area {
   background-color: #f7f7f7;
-  padding: 130px 0 25px;
+  padding: 0px 0 25px;
 }
 
 @media (max-width: 991px) {
@@ -5367,8 +5366,6 @@ h6 {
 
 /* line 132, /Applications/MAMP/htdocs/palash/cl/july 2019/191 Lifeleck Blog/191 Lifeleck Blog html/sass/_footer.scss */
 .footer-area .copyright_text {
-  padding-top: 25px;
-  margin-top: 70px;
   border-top: 1px solid #e6e8e9;
 }
 
