@@ -25,7 +25,7 @@ SECRET_KEY = '%a-!r7@19+9$k0h#2+7__y+n$$3yr91g%xq+*d37k#_5#fhawq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio.eba-q9bsjq9d.ap-south-1.elasticbeanstalk.com', '35.154.191.18', '13.232.195.169','jayeshsingh.com', '172.31.12.56']
+ALLOWED_HOSTS = ['portfolio.eba-q9bsjq9d.ap-south-1.elasticbeanstalk.com', '35.154.191.18', '13.232.195.169','jayeshsingh.com', '172.31.12.56', '127.0.0.1']
 
 
 # Application definition
